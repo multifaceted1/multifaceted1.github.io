@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Let's Plant Trees!</title>
+    <link href="https://fonts.googleapis.com/css?family=Kalam&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Let's Plant Trees!</h1>
+    </header>
+    
+    <div class="videoFlexbox">
+        <div class="sideNote">
+            <h3>How Do Trees Reduce Global Warming?</h3>
+            <p>The carbon dioxide levels in our atmosphere have been rising.  This traps extra heat in our atmosphere and creates an effect called global warming.  Trees break down carbon dioxide, releasing oxygen and storing carbon. This gives us the oxygen we need and cools the planet.</p>
+        </div>
+        <div class="video">
+            <iframe src="https://www.youtube.com/embed/aaBcYvcCHnU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="sideNote">
+            <h3>How Else do Trees Help the Earth?</h3>
+            <p>Trees provide food and shelter to animals and humans.  They create shade which cools the air.  Trees also release water vapor into the atmosphere, and in large numbers they create clouds which provide us with rain.  Trees even have a beneficial effect on our emotional state.  Let's all show our gratitude by planting some trees!
+            </p>
+        </div>
+    </div>
+    <br>
+    <main>
+        <br>
+        <div class="backgroundTyping">
+            <h3>Planting Your Trees</h3>
+            <p>The United States is blessed with an abundance of native tree varieties.  To preserve the ecosystem, it is best to plant trees that would be found naturally in your area.  I have included in the list below trees which are common, hardy, or particularly beautiful.</p>
+        </div>
+        <div class="mainFlexbox" class="backgroundTyping">
+            <h2 class="backgroundTyping">Step One: Pick your State!</h2>
+            <select id="state-dropdown" class="backgroundTyping">
+                <option value="AL">Alabama</option>
+                <option value="AK">Alaska</option>
+                <option value="AZ">Arizona</option>
+                <option value="AR">Arkansas</option>
+                <option value="CA">California</option>
+                <option value="CO">Colorado</option>
+                <option value="CT">Connecticut</option>
+                <option value="DE">Delaware</option>
+                <option value="DC">District Of Columbia</option>
+                <option value="FL">Florida</option>
+                <option value="GA">Georgia</option>
+                <option value="HI">Hawaii</option>
+                <option value="ID">Idaho</option>
+                <option value="IL">Illinois</option>
+                <option value="IN">Indiana</option>
+                <option value="IA">Iowa</option>
+                <option value="KS">Kansas</option>
+                <option value="KY">Kentucky</option>
+                <option value="LA">Louisiana</option>
+                <option value="ME">Maine</option>
+                <option value="MD">Maryland</option>
+                <option value="MA">Massachusetts</option>
+                <option value="MI">Michigan</option>
+                <option value="MN">Minnesota</option>
+                <option value="MS">Mississippi</option>
+                <option value="MO">Missouri</option>
+                <option value="MT">Montana</option>
+                <option value="NE">Nebraska</option>
+                <option value="NV">Nevada</option>
+                <option value="NH">New Hampshire</option>
+                <option value="NJ">New Jersey</option>
+                <option value="NM">New Mexico</option>
+                <option value="NY">New York</option>
+                <option value="NC">North Carolina</option>
+                <option value="ND">North Dakota</option>
+                <option value="OH">Ohio</option>
+                <option value="OK">Oklahoma</option>
+                <option value="OR">Oregon</option>
+                <option value="PA">Pennsylvania</option>
+                <option value="RI">Rhode Island</option>
+                <option value="SC">South Carolina</option>
+                <option value="SD">South Dakota</option>
+                <option value="TN">Tennessee</option>
+                <option value="TX">Texas</option>
+                <option value="UT">Utah</option>
+                <option value="VT">Vermont</option>
+                <option value="VA">Virginia</option>
+                <option value="WA">Washington</option>
+                <option value="WV">West Virginia</option>
+                <option value="WI">Wisconsin</option>
+                <option value="WY">Wyoming</option>
+            </select>
+            <button id="stateButton" class="backgroundTyping">Select</button>				
+        </div>
+        <div id="StateDivs" class="backgroundTyping">
+            <p id="AL" class="invisible">
+            Trees which are native to Alabama include:
+            American Sweetgum, American Sycamore, Boxelder, Flowering Dogwood, Red Maple, and Yellow Poplar.
+            </p>
+
+            <p id="AK" class="invisible">
+            Trees which are native to Alaska include:
+            Balsam Fir, Quaking Aspen, and White Spruce.
+            </p>
+
+            <p id="AZ" class="invisible">
+            Arizona is an arid environment and few trees will be appropriate for this climate, but Bigtooth Maple, Mesquite, and ponderosa pine can do well here.
+            </p>
+
+            <p id="AR" class="invisible">
+            Trees which are native to Arkansas include:  American Sweetgum, Boxelder, Bur Oak, Cedar Elm, Flowering Dogwood, and Red Maple.</p>
+
+            <p id="CA" class="invisible">
+            Trees which are native to California include: Douglas Fir, Incense Cedar, Pacific Rhododendron, and Ponderosa Pine.  If you live in Los Angeles you can get free trees at <a href="https://www.cityplants.org/" target=_blank>cityplants.org</a> and if you would like to work with an organization to plant trees in L.A. please visit <a href="https://www.treepeople.org/volunteer" target=_blank>TreePeople.org</a>.</p>
+
+            <p id="CO" class="invisible">
+            Trees which are native to Colorado include:  Boxelder, Douglas Fir, Mesquite, Ponderosa Pine, and Quaking Aspen.  According to the Colorado Division of Water Resources,Colorado has water laws which in many cases forbid outdoor watering, even for trees.  Please check whether you have water rights for the land you would like to plant on. <a href="http://water.state.co.us/Home/Pages/default.aspx" target=_blank>Colorado Department of Natural Resources</a></p>
+
+            <p id="CT" class="invisible">Trees which are native to Connecticut include:
+            Flowering Dogwood, Red Maple, Staghorn Sumac, and Sugar Maple.</p>
+
+            <p id="DC" class="invisible">
+            Some native trees which are found in the area around Washington D.C. include:  American Sweetgum, American Sycamore, Boxelder, Flowering Dogwood, Red Maple, Sugar Maple, and Yellow Poplar.  In the city itself you can find many blossoming Japanese cherry trees.</p>
+
+            <p id="DE" class="invisible">
+             Some trees which are native to Delaware, Maryland and Washington D.C. include:  American Sweetgum, American Sycamore, Boxelder, Flowering Dogwood, Red Maple, Sugar Maple, and Yellow Poplar.</p>
+
+            <p id="FL" class="invisible">Florida's tropical climate hosts many plant species including mangroves.  Some trees which are native to Florida include palm trees like the Cabbage Palmetto, American Sweetgum, and Yellow Poplar.</p>
+
+            <p id="GA" class="invisible">
+            Trees which are native to Georgia include:
+            American Sweetgum, Cabbage Palm, Flowering Dogwood, and Yellow Poplar.</p>
+
+            <p id="HI" class="invisible">
+            The western Hawaiian islands are more densely forested than the newer Eastern Islands.  Koa is one example of a native tree.</p>
+
+            <p id="ID" class="invisible">
+                Trees which are native to Idaho include:  Douglas Fir, Quaking Aspen, and Ponderosa Pine.</p>
+
+            <P id="IL" class="invisible">
+                Trees which are native to Illinois include: American Sycamore, Boxelder, Bur Oak, Flowering Dogwood, Red Maple, Sugar Maple, and Yellow Poplar. If you would like to help with planting trees in Chicago you can visit: <a href="https://www.gatewaygreen.org/purchase-plant-a-tree-chicago/" target=_blank>gatewaygreen.org</a>.
+            </P>
+
+            <p id="IN" class="invisible">
+                Trees which are native to Indiana include: American Sycamore, Boxelder, Bur Oak, Flowering Dogwood, Red Maple, Sugar Maple, and Yellow Poplar.
+            </p>
+            <p id="IA" class="invisible">
+                The state tree of Iowa is the Bur Oak, a hardy plains species.  Many varieties of oak do well in plains regions.  Other trees which are native to Iowa include: Boxelder, Staghorn Sumac, and Sugar Maple.
+            </p>
+
+            <p id="KS" class="invisible">
+                Kansas is a plains tree and there are fewer native species of tree from this area but the American Sycamore and the Bur Oak are two tough native species that thrive here.
+            </p>
+
+            <p id="KY" class="invisible">
+                Kentucky has an abundance of native tree varieties including: American Sycamore, American Sweetgum, Boxelder, Flowering Dogwood, and Sugar Maple.
+            </p>
+
+            <p id="LA" class="invisible">
+                Louisiana has a bayou area which shelters many birds and reptiles.  This area has some trees such as Cypress which thrive in hot swampy conditions.  Farther inland some trees which are native are: American Sweetgum, American Sycamore, Boxelder, Flowering Dogwood, and Yellow Poplar.
+            </p>
+
+            <p id="ME" class="invisible">
+                Some tree species native to Maine are: Balsam Fir, Quaking Aspen, Red Maple, Staghorn Sumac, Sugar Maple, and White Spruce.
+            </p>
+
+            <p id="MD" class="invisible">
+                Maryland has a variety of tree species, some of which include: American Sweetgum, American Sycamore, Box Elder, Flowering Dogwood, Red Maple, Sugar Maple, and Yellow Poplar.
+            </p>
+            <p id="MA" class="invisible">
+                Massachusetts has many tree species including: American Sycamore, Flowering Dogwood, Red Maple, Sugar Maple, Staghorn Sumac, and Yellow Poplar.
+            </p>
+
+            <p id="MI" class="invisible">
+                Michigan has mild summers and cold winters.  Some trees which are cold tolerant and native to the area are: American Sycamore, Balsam Fir, Boxelder, Red Maple, Staghorn Sumac, Sugar Maple, and White Spruce.
+            </p>
+
+            <p id="MN" class="invisible">
+                Some of the trees native to Minnesota are: Balsam Fir, Boxelder, Bur Oak, and White Spruce.
+            </p>
+            
+            <p id="MS" class="invisible">
+                Mississippi has many native trees, some of which include: American Sweetgum, American Sycamore, Boxelder, Red Maple, and Yellow Poplar.
+            </p>
+
+            <p id="MO" class="invisible">
+                Missouri has forests as well as plains.  In the areas where there are plains, a tree like Bur Oak would do very well.  Other trees that are native include American Sycamore and Sugar Maple.
+            </p>
+
+            <p id="MT" class="invisible">
+                Montana is home to many state and national parks.  It has a low population density and plenty of forested areas.  Some great trees to plant here include: Boxelder, Douglas Fir, Ponderosa Pine, and White Spruce.
+            </p>
+
+            <p id="NE" class="invisible">
+                Some trees that are native to Nebraska include: Boxelder, Bur Oak, and Sugar Maple.
+            </p>
+
+            <p id="NV" class="invisible">
+                Nevada is largely an arid climate and there are a limited number of trees that can thrive here.  I highly recomend planting Mesquite if you live in a very dry area to add nitrogen and moisture to your soil.  If you are in a slightly more green area I recomend Cedar Elm or Bigtooth Maple.
+            </p>
+
+            <p id="NH" class="invisible">
+                New Hampshire is home to native trees like: American Sycamore, Balsam Fir, Flowering Dogwood, Quaking Aspen, Red Maple, Staghorn Sumac, Sugar Maple, White Spruce and Yellow Poplar.
+            </p>
+
+            <p id="NJ" class="invisible">
+                Some trees which are native to New Jersey include: American Sweetgum, American Sycamore, Boxelder, Flowering Dogwood, Red Maple, Sugar Maple, and Yellow Poplar.
+            </p>
+            <p id="NM" class="invisible">
+                New Mexico is a dry area with hardy trees like: Bigtooth Maple, Mesquite, and Ponderosa Pine.  Native Plant Society of New Mexico is a nonprofit organization that educates the public about local plants and provides grants for ecology projects. Here is a link: <a href="https://www.npsnm.org/" target=_blank>NPSNM.ORG</a>
+            </p>
+
+            <p id="NY" class="invisible">
+                Some native plants which thrive in New York include: American Sycamore, Balsam Fir, Flowering Dogwood, Quaking Aspen, Red Maple, Staghorn Sumac, Sugar Maple, and Yellow Poplar.  If you are a NYC resident and you want to plant trees for the city, they would love your help!  Here is a link for those opportunities: <a href="https://www.milliontreesnyc.org/html/plant/volunteer.shtml" target=_blank>Million Trees NYC</a>. 
+            </p>
+
+            <p id="NC" class="invisible"> North Carolina has a mild climate suitable to a wide range of trees, such as: American Sweetgum, American Sycamore, Boxelder, Flowering Dogwood, Red Maple, and Yellow Poplar.
+            </p>
+
+            <p id="ND" class="invisible">
+                Some of the trees that are native to North Dakota include: Boxelder, Bur Oak, Ponderosa Pine, and Quaking Aspen.
+            </p>
+
+            <p id="OH" class="invisible">
+                Some trees taht are native to Ohio include: American Sycamore, Boxelder, Flowering Dogwood,Quaking Aspen, Staghorn Sumac, Sugar Maple, and Yellow Poplar.
+            </p>
+
+            <p id="OK" class="invisible">
+                Oaklahoma is a plains area with fewer species of native tree.  Some trees which thrive here are: American Sycamore, Bur Oak, Cedar Elm, and Mesquite.
+            </p>
+
+            <p id="OR" class="invisible">
+                Oregon has many lovely forests with large evergreens.  Douglas Fir, Incense Cedar, Pacific Rhododendron, Ponderosa Pine, and Quaking Aspen are all native species.
+            </p>
+
+            <p id="PA" class="invisible">
+                Some trees which ar native to Pennsylvania include: American Sycamore, Box Elder, Flowering Dogwood, Red Maple, Staghorn Sumac, Sugar Maple and Yellow Poplar.
+            </p>
+            <p id="RI" class="invisible">
+                Some trees which are native to Rhode Island include: American Sycamore, Flowering Dogwood, Red Maple, Staghorn Sumac, Sugar Maple, and Yellow Poplar.
+            </p>
+            <p id="SC" class="invisible">
+                Some trees native to South Carolina include: American Sweetgum, American Sycamore, Boxelder, Flowering Dogwood, Red Maple, and Yellow Poplar.
+            </p>
+            <p id="SD" class="invisible">
+                Some trees native to South Dakota include: Boxelder, Bur Oak, Ponderosa Pine, and Quaking Aspen.
+            </p>
+
+            <p id="TN" class="invisible">
+                Some trees native to Tennesee are: American Sweetgum, American Sycamore, Flowering Dogwood, Red Maple, Sugar Maple, and Yellow Poplar.
+            </p>
+
+            <p id="TX" class="invisible">
+                Texas A&M Forest Service has a fantastic website that has all the information you could want about trees in Texas!  Here is a link: <a href="https://tfsweb.tamu.edu/" target=_blank>Texas A&M Forest Service</a>. Some trees which grow in Texas include: Bigtooth Maple, Cedar Elm, Flowering Dogwood, and Mesquite.
+            </p>
+            <p id="UT" class="invisible">
+                Utah's semi-arid soil suits Mesquite very well.  Ponderosa Pines and Quaking Aspen can be grown in areas where there is more moisture in the ground.
+            </p>
+            <p id="VT" class="invisible">
+                Vermont is famous for it's maple syrup which comes from the Sugar Maple tree.  Other native trees include: Balsam Fir, Quaking Aspen, Red Maple, Staghorn Sumac, White Spruce, and Yellow Poplar.
+            </p>
+            <p id="VA" class="invisible">
+                Virginia is home to such species of tree as: American Sweetgum, American Sycamore, Box Elder, Flowering Dogwood, Red Maple, Sugar Maple, and Yellow Poplar.
+            </p>
+            <p id="WA" class="invisible">
+                Washington State's Pacific Northwest forests are deep emerald and stunning.  These temperate rainforests are home to large evergreens like Ponerosa Pine, and Douglas Fir.  Spectacular Pacific Rhododendron, and Quaking Aspen can also be found here.
+            </p>
+            <p id="WV" class="invisible">
+                Some trees native to West Virgina include: American Sweetgum, American Sycamore, Box Elder, Flowering Dogwood, Red Maple, Sugar Maple, and Yellow Poplar.
+            </p>
+
+            <p id="WI" class="invisible">
+                Some trees native to Wisconsin include: Balsam Fir, Staghorn Sumac, and Sugar Maple.
+            </p>
+            <p id="WY" class="invisible">
+                The second least population dense state, Wyoming is home to many beautiful open spaces.  Here you will find trees such as: Douglas Fir, Ponderosa Pine, and Quaking Aspen. 
+            </p>
+
+        </div>
+    
+        <br>
+        <div class="mainFlexbox">
+            <h2 class="backgroundTyping">Step Two: Pick a Tree!</h2>
+            <select id="tree-dropdown"n class="backgroundTyping">
+                <option value="AmericanSweetgum">American Sweetgum</option>
+                <option value="AmericanSycamore">American Sycamore</option>
+                <option value="BalsamFir">Balsam Fir</option>
+                <option value="BigtoothMaple">Bigtooth Maple</option>
+                <option value="Boxelder">Boxelder</option>
+                <option value="BurOak">Bur Oak</option>
+                <option value="CabbagePalmetto">Cabbage Palm (AKA Sabal Palmeto)</option>
+                <option value="CedarElm">Cedar Elm</option>
+                <option value="DouglasFir">Douglas Fir</option>
+                <option value="FloweringDogwood">Flowering Dogwood</option>
+                <option value="IncenseCedar">Incense Cedar</option>
+                <option value="Koa">Koa</option>
+                <option value="Mesquite">Mesquite</option>
+                <option value="PacificRhododendron">Pacific Rhododendron</option>
+                <option value="PonderosaPine">Ponderosa Pine</option>
+                <option value="QuakingAspen">Quaking Aspen</option>
+                <option value="RedMaple">Red Maple</option>
+                <option value="StaghornSumac">Staghorn Sumac</option>
+                <option value="SugarMaple">Sugar Maple</option>
+                <option value="White Spruce">White Spruce</option>
+                <option value="YellowPoplar">Yellow Poplar (AKA Tulip Tree></option>
+            </select>
+            <button id="treeButton" class="backgroundTyping">Select</button>
+        </div>
+        <div id="treeDivs" class="backgroundTyping">
+                <p class="invisible" id="AmericanSweetgum">American Sweetgum is part of the Witch Hazel family. It is found in warm areas and it enjoys full sun and moderately moist soil.  It sheds spiney round seeds and has beautiful fall foliage.</p>
+                <p class="invisible" id="AmericanSycamore">American Sycamore is a fast growing tree with round seed heads.  It is hardy and can grow up to 6 feet per year! Green leaves may turn gold in fall.  Found in the Midwest and on the East Coast.</p>
+                <p class="invisible" id="BalsamFir">Balsam Fir is an evergreen that likes cold regions. A pretty tree with green pinecones which is often used as a Christmas tree.  It can grow in a wide range of soils but prefers slight acidity.</p>
+                <p class="invisible" id="BigtoothMaple">Bigtooth Maple can live in somewhat dry states like Texas, Arizona, and New Mexico.  Found along canyon streams in slightly alkaline soil.  Heat tolerant and somewhat drought tolerant.</p>
+                <p class="invisible" id="Boxelder">Boxelder is a hardy tree in the Maple family.  It is hardy but has a shorter lifespan than most trees.  Prefers moist soil near ponds.</p>
+                <p class="invisible" id="BurOak">Bur Oak is a tree of the plains.  Found in grasslands, it is the state tree of Iowa. The Arbor Day foundation has an article by James R. Fazio titled, "Bur Oak: A Tough Tree for Tough Places" "...It's generally slow growth is compensated by longevity that may exceed 200 to 300 years.  It reaches up to 80 feet at maturity and loves full sun (hardiness zones 3-8)."</p>
+                <p class="invisible" id="CabbagePalmetto">Cabbage Palm (AKA Sabal Palmeto) is a tropical palm tree that grows in Florida and Georgia.  It prefers well drained soil and frequent watering until established.</p>
+                <p class="invisible" id="CedarElm">Cedar Elm is often used as a street tree in dry areas due to it's hardiness and some tolerance to drought. Found in Texas, Oaklahoma, and Arkansas.</p>
+                <p class="invisible" id="DouglasFir">Douglas Fir is often used in reforestation projects or as a Christmas tree.  It prefers moist soil and partial shade.  This tree can grow to 250 feet in the rainy Pacific Northwest, but can grow in dry climates as well.</p>
+                <p class="invisible" id="FloweringDogwood">Flowering Dogwood is a pretty deciduous tree which blossoms in white, pink, or red in Spring and has bright berries in fall.  Plant in partial shade for best results.</p>
+                <p class="invisible" id="IncenseCedar">Incense Cedar is an evergreen which grows in a neat columnar style.  It is native to Oregon and California. Often grown as an ornamental tree in rows to make a kind of hedge when planted 6-8 feet apart. It is highly drought tolerant and fire resistant which might make it an excellent choice to reforest after wildfires.</p>
+                <p class="invisible" id="Koa">Koa, or Acacia Koa, is a Hawaiian tree famed for it's beautiful wood.  It is actually a member of the pea family. Koa trees have suffered from excessive loging but can easily be planted in open fields which bodes well for a potential recovery of their species.
+                </p>
+                <p class="invisible" id="Mesquite">Mesquite is an overlooked tree but may have a great future as an ecological powerhouse.  Highly drought tolerant, fire resistant, and full of soil restoring legumes, this plant could hold a key to making dry arid land more fertile.  Scientist Peter Felker <a href="http://sites.google.com/site/petersprosopismesquitesite/" target=_blank>(Mesquite research link)</a> has been studying the use of mesquite internationally in arid climates as a way to improve soil and prevent desertification.</p>
+                <p class="invisible" id="PacificRhododendron">Pacific Rhododendrons are stunning bushes which may grow into trees.  They give a tropical feel to an area with lovely lilly like blossoms.  Many people in the Pacific Northwest plant these in their yard to ensure  flowers every spring with little effort.  Plant in partial shade, in slightly acidic and moist soil.</p>
+                <p class="invisible" id="PonderosaPine">Ponderosa Pine are great tall trees of the western mountains.  This is an important tree to the lumber industry with heavy solid wood.  They grow best in full sun with moist soil but can addapt to a variety of conditions.</p>
+                <p class="invisible" id="QuakingAspen">Quaking Aspen are named for the way that they move in the wind, seeming to quake on their slender trunks.  Their white trunks have a stark beauty in the winter and in the fall they are radiant with gold leaves.</p>
+                <p class="invisible" id="RedMaple">Red Maples are popular due to their bright red leaves in the fall.  They prefer full sun with moist soil.  Red Maples are found all over the east coast. It is important not to plant them near horses because their fallen leaves can be toxic to them.</p>
+                <p class="invisible" id="StaghornSumac">Staghorn Sumac has a tropical appearance yet is a cold climate plant.  It is fast growing, with long leaves and bright red clusters of flowers.  Staghorn Sumac can be found in places where othere trees would not thrive, places with dry poor soil and steep slopes.  This makes it great to plant as a way to prevent erosion.</p>
+                <p class="invisible" id="SugarMaple">We have the Sugar Maple to thank for delicious maple syrup!  The tree will only produce the sap in the colder regions, so states like Vermont are nice places to pick up maple candies and treats.  The leaves of the tree are the same as the maple leaf on Canada's flag and the tree is common there.  Sugar Maple does poorly in poluted areas and has been harmed by acid rain.  It likes loam soil (kind of a well drained clay with some sand) so don't enrich the soil with too much organic material when planting.</p>
+                <p class="invisible" id="White Spruce">White Spruce is found in Alaska, Canada, and the coldest northern states.  It is the state tree of South Dakota.  Often used for Chrismas trees because of it's attractive and even growth. A hardy tree, it does best in full sun and slightly acidic loam soil. </p>
+                <p class="invisible" id="YellowPoplar">Yellow Poplar is also known as the Tulip Tree, because of the yellow and orange tulips it makes in May. A spendid ornamental tree, with golden fall foliage, it can be found all over the east coast as far south as Florida and as far north as New York.  Plant it in acidic, well drained, moist soil and in full sun. </p>
+        </div>
+
+        <div class="backgroundTyping" id="guidelines">
+            <h3 >Planting Guidelines</h3>
+            <p >If you would like to plant a tree on your property, you will need to take more care than if your goal is to reforest land with a mass seeding. Many reforesting projects consist of planting hundreds of trees and hoping that a healthy percentage of them may live.  I will list some wonderful organizations below which you can help with this type of tree planting.<br><br>Each tree has it's own soil ph, sunlight exposure, and watering preferences. But there are some guidelines that will apply to most trees that you will be planting. When you plant a tree that you really want to thrive, I would recomend using a potted tree rather than a bare root tree.  A potted tree will be less susceptible to shock and have a better chance of survival.  <br><br>Dig your hole to the depth of the roots of the tree.  Check to make sure that your tree has the correct sun exposure and the correct soil moisture.  It is fine to dig the hole wide but be sure not to dig it too deep.  You can amend the soil with organic matter if your tree prefers acidic soil.  Plant the tree and saturate it with water.  You may put mulch around the tree, but be sure not to let the mulch touch the trunk.  Water your tree daily for two or three weeks and for the next few months you can water it every two or three days.  Enjoy your new tree!
+            </p>
+        </div>
+        <br>
+        <br>
+        
+    </main>
+    <div class="fling-minislide">
+        <img src="bigTrees.png">
+        <img src="mediumTrees.png">
+        <img src="babyTrees.png">
+    </div>
+<footer>
+    <h2>Want to help a tree planting organization?</h2>
+    <p>For those of us who would like to plant trees with a group, there are many options. Here are some nonprofits that work at a national or global level:</p>
+    <p><strong>One Tree Planted</strong> is an amazing international organization.  They will plant trees for you if you give a little donation, or you can use other peoples donations to plant the trees with a team.  Brilliant!  Check it out here: <a href="https://onetreeplanted.org/" target=_blank>onetreeplanted.org</a>.
+    </p>
+    <p><strong>Arbor Day</strong> is a fountain of helpful information. I visited their website often as a reference. (Thank you!) They sell a variety of trees, and if you buy from them, it will help them with their nonprofit work. Here is their site: <a href="https://www.arborday.org/" target=_blank>arborday.org</a>.</p>
+    <p>
+        <strong>The Nature Concervancy</strong> is undergoing an effort to plant a billion trees.  Would you like to help? Here is the link: <a href="https://www.nature.org/en-us/get-involved/how-to-help/plant-a-billion/north-america/" target=_blank>nature.org</a>
+    </p>
+    <h2>Before you dig, call 811.</h2>
+    <p>811 is a service offered in every state.  For safety, please call 811 before diging anywhere that utilities may be present.</p>
+</footer>
+
+</body>
+</html>
