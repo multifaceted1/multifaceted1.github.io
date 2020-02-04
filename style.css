@@ -4,11 +4,13 @@ h1, h2, h3 {
 }
 h1 {
     text-align: center;
-    padding: 20px;
+    padding: 15px;
     font-size: 50px;
     border-bottom: 7px solid #6b4227;
 
 }
+
+
 body {
     background-color: #faebd7;
 }
@@ -20,7 +22,7 @@ body {
     height: 315px;
 }
 .sideNote {
-    max-width: 320px;
+    max-width: 450px;
     margin-right: 15px;
     margin-left: 15px;
 }
@@ -75,11 +77,17 @@ select {
     margin: 25px;
     padding: 2px 15px;
 }
+button:hover {
+    opacity: 100%;
+}
+select:hover {
+    opacity:100%;
+}
 
 .fling-minislide {
     position: relative;
     width: 100%;
-    height: 200px;
+    height: 400px;
 }
 
 .fling-minislide img {
@@ -105,28 +113,82 @@ footer {
 
 /* media query */
 
-@media(max-width:500px) {
+@media(max-width:800px) {
+.videoFlexbox {
+    display: block;
+    width: 95%;
+    margin: auto;
+}
+
+.sideNote {
+    max-width:700px;
+    margin: auto;
+}
+}
+
+@media(max-width:460px) {
 
 body{
     max-width: 100vw;
 }
-.mainFlexbox{
-    display: block;
-}
+
 p { 
-    font-size: 12px;
+    font-size: 14px;
     max-width: 100%;
 }
 
 .videoFlexbox{
     display: block;
+    width: 90%;
+    margin: auto;
+}
+div .sideNote {
+    padding-left: 6%;
+    padding-right: 6%;
 }
 h1 {
-    font-size: 20px;
+    font-size: 22px;
 }
 
 body .video iframe{
     height: 205px;
     width: 364px;
+    display: block;
+    margin: auto;
 }
+}
+.fling-minislide {
+    height: 80px;
+}
+
+@media(max-width:360px) {
+
+body{
+    max-width: 100%;
+}
+body .video iframe{
+    height: 175px;
+    width: 317px;
+    display: block;
+    margin: auto;
+}
+h2 { 
+    font-size: 18px;
+}
+
+h3 {
+    font-size: 16px;
+}
+p {
+    font-size: 12px;
+}
+
+.backgroundTyping {
+    margin-right: 7%;
+    margin-left: 7%;
+}
+button {
+    margin-top: 4px;
+}
+
 }
