@@ -31,7 +31,7 @@ p {
 }
 
 main {
-    background-image: url("https://res.cloudinary.com/margaretkellogg/image/upload/v1580792206/Let%27s%20Plant%20Trees/mountain-trees_uskocp.jpg")
+    background-image: url("https://res.cloudinary.com/margaretkellogg/image/upload/v1580792206/Let%27s%20Plant%20Trees/mountain-trees_uskocp.jpg");
 }
 .mainFlexbox {
     display: flex;
@@ -109,6 +109,10 @@ footer {
     border: 10px double #6b4227;
     background-color: white;
     opacity: .6;
+}
+p #signature {
+    margin-left: 75%;
+    font-size: 10px;
 }
 
 /* media query */
