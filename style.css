@@ -151,7 +151,7 @@ div .sideNote {
     padding-right: 6%;
 }
 h1 {
-    font-size: 22px;
+    font-size: 24px;
 }
 
 body .video iframe{
@@ -177,14 +177,11 @@ body .video iframe{
     margin: auto;
 }
 h2 { 
-    font-size: 18px;
+    font-size: 19px;
 }
 
 h3 {
-    font-size: 16px;
-}
-p {
-    font-size: 12px;
+    font-size: 17px;
 }
 
 .backgroundTyping {
